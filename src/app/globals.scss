@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --main-color-text: #DD4124;
+    --secondary-color-text: #000000;
+    --main-color-bg: #FFEFC1;
+    --secondary-color: #FFF7E0;
+    --third-color: #FFDC75;
+    --primary-font: 'Poppins', serif;
+    --secondary-font: 'Caveat', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--main-color-bg);
+}
+
+.portfolio-main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 95px 70px;
+}
+
+.portfolio-header {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title {
+        color: var(--main-color-text);
+        font-size: 5rem;
+        font-weight: 700;
+        font-family: var(--primary-font);
+        line-height: 1.1;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-family: var(--primary-font);
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 0.5rem;
+    }
+
+    .title-subtitle-two {
+        padding-left: 70px;
+    }
+
+    @media (max-width: 1200px) {
+        .title {
+            font-size: 3.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .title {
+            font-size: 3rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+.portfolio-content {
+    width: 900px;
+    height: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    overflow: hidden;
+
+    .nav-container {
+        background-color: var(--third-color);
+        border-radius: 16px 16px 0 0;
+        height: 5rem;
+
+        span {
+            display: block;
+            color: var(--main-color-text);
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 5rem;
+            font-size: 1.5rem;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
