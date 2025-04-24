@@ -69,6 +69,7 @@ export default function Home() {
         <Window folderName={openFolder} onClose={handleCloseWindow}>
           {openFolder === 'Introduction' && <Introduction />}
           {openFolder === 'Skills' && <Skills />}
+          {openFolder === 'Contact' && <Contact />}
         </Window>
       )}
     </main>

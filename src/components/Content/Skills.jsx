@@ -11,17 +11,17 @@ const skills = [
     { name: 'Redux', src: '/assets/Folder-skills/redux.png' },
     { name: 'NodeJs', src: '/assets/Folder-skills/nodejs.png' },
     { name: 'express', src: '/assets/Folder-skills/express.png' },
-    { name: 'postgre', src: '/assets/Folder-skills/portgre.png' }
+    { name: 'postgre', src: '/assets/Folder-skills/postgre.png' }
 ];
 
 export default function Skills() {
     return (
         <div className="skills-content">
-            {skills.map((skill, index) => {
+            {skills.map((skill, index) => (
                 <div key={index} className="skill-item">
                     <img src={skill.src} alt={skill.name} className="skill-icon" />
                 </div>
-            })}
+            ))}
         </div>
     )
 };
